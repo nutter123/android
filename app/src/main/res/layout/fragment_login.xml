@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bj"
+    android:orientation="vertical"
+    tools:context="com.example.nutter.dongruancp.activity.MainActivity" >
+
+    <ImageView
+        android:id="@+id/add_touxiang"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/login_touxiang" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_touxiang"
+        android:gravity="center"
+        android:text="坚果订餐"
+        android:textColor="#111"
+        android:textIsSelectable="false"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/denglu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/zhanghao"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/account_2"
+            android:ems="10"
+            android:hint="输入账号邮箱"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/mima"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/denglu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/corners_button"
+        android:text="登录"
+        android:textColor="#eee"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="注册账号"
+            android:textColor="#e1e1e1"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/login_QQ"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:background="@drawable/qq" />
+
+        <Button
+            android:id="@+id/wangjimima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="忘记密码"
+            android:textColor="#e1e1e1"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

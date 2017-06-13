@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nutter.dongruancp.fragment.Shop_searchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/tv_sousuo"
+            android:layout_toStartOf="@+id/tv_sousuo"
+            android:layout_weight="1"
+            android:paddingRight="7dp">
+
+            <Button
+                android:id="@+id/tv_sousuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/tv_sousuo"
+                android:layout_toStartOf="@+id/tv_sousuo"
+                android:background="@drawable/ease_seabar_input"
+                android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@android:color/background_dark"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_sousuo"
+                android:layout_toStartOf="@+id/tv_sousuo"
+                android:background="@android:color/transparent"
+                android:padding="6dp"
+                android:src="@drawable/ease_search_clear"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:drawableEnd="@drawable/tianqi"
+            android:drawableLeft="@drawable/dinwei"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="大连东软信息学院"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:background="@drawable/ease_common_tab_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="7dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recycler_View_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:background="#eaeaea">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_no_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:text="No result"
+            android:visibility="invisible"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bj"
+    tools:context="com.example.nutter.dongruancp.activity.FoodActivity">
+
+    <ImageView
+        android:id="@+id/imageView3_food_pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/relativeLayout"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="#84e2e2e2">
+
+        <ImageButton
+            android:id="@+id/imageButton3_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/imageButton_favor1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/unshoucang" />
+
+        <TextView
+            android:id="@+id/textView3_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|fill_horizontal"
+            android:paddingLeft="3dp"
+            android:text="菜品名称"
+            android:textColor="#e0000000"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_xiangqing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/imageView3_food_pic"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView3_food_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableLeft="@drawable/price"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView3_food_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textView3_food_intro"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/phone"
+            android:gravity="center_horizontal"
+            android:paddingRight="20dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3_food_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView3_food_price"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_View_pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout_xiangqing"
+        android:padding="10dp"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

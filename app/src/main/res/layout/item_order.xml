@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorChecked"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_order"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView_order"
+        android:layout_toRightOf="@+id/imageView_order"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/order_foodname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="菜品名"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="left|center_vertical"
+            android:maxEms="15"
+            android:text="价钱"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/order_price"
+            android:layout_alignBottom="@+id/order_price"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left|center_vertical"
+            android:text="时间"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

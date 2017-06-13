@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bj"
+    android:orientation="vertical"
+    tools:context="com.example.nutter.dongruancp.activity.MainActivity" >
+
+    <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:id="@+id/r_fanhui"
+        android:textSize="20sp"
+        android:textColor="?android:attr/textColorSecondaryInverseNoDisable"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="用户注册"
+        android:textColor="#111"
+        android:textIsSelectable="false"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/r_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/account_2"
+            android:ems="10"
+            android:hint="输入账号邮箱"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/r_userpass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="输入密码"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/r_mobilenum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="输入手机号"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/r_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="输入地址"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/r_comment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="输入简介"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/r_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/corners_button"
+        android:text="注册"
+        android:textColor="#eee"
+        android:textSize="16sp" />
+</LinearLayout>

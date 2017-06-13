@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorChecked"
+    android:elevation="1dp"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView_food"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/imageView_food"
+        android:layout_toRightOf="@+id/imageView_food"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/textView_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="菜品名称"
+            android:textColor="#d6363636"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_food_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_food"
+            android:layout_marginTop="6dp"
+            android:gravity="left|center_vertical"
+            android:maxEms="15"
+            android:text="菜品简介"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_food_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/textView_food"
+            android:layout_toRightOf="@+id/textView_food"
+            android:gravity="left|center_vertical"
+            android:text="菜品价钱"
+            android:textColor="#cdf64b4b"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/textView_food_price"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tvMinus"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/button_minus"
+                android:clickable="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:text="0"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/button_add"
+                android:clickable="true"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

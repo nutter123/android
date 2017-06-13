@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/textView_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/up_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="用户信息"
+            android:textColor="#111"
+            android:textIsSelectable="false"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/up_fanhui"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"
+            android:text="返回"
+            android:textColor="?android:attr/textColorSecondaryInverseNoDisable"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/up_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/account_2"
+            android:ems="10"
+            android:hint="账号"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/up_userpass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/up_mobilenum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="手机号"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/up_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/corners_bg"
+            android:drawableLeft="@drawable/lock"
+            android:ems="10"
+            android:hint="地址"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:textColor="#eee"
+            android:textColorHint="#eee"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corners_button"
+        android:text="修改"
+        android:textColor="#eee"
+        android:textSize="16sp" />
+
+</RelativeLayout>
