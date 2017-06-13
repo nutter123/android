@@ -11,37 +11,15 @@
 retrofit2.2.0;converter-gson2.2.0;okhttp3.6.0;picasso2.5.2;recyclerview;constraint-layout;bottomsheet;design;convenientbanner;Lrecyclerview;swipemenulistview.
 # 部分截图
 
-
-### 商铺列表页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/msite.gif" width="365" height="619"/>
-
-
-### 商铺筛选页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.gif" width="365" height="619"/>
-
-
-
-### 餐馆食品列表与购物车
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/shop_cart.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/shop_cart.gif" width="365" height="619"/>
-
-### 确认订单页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/confirm1.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/confirmOrder.gif" width="365" height="619"/>
-
-
-### 搜索页
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/search.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/search.gif" width="365" height="619"/>
-
-
 ### 登录页
+<img src="https://github.com/nutter123/android/edit/master/image/login.png" width="365" height="619"/>
+### 商铺列表页
+<img src="https://github.com/nutter123/android/edit/master/image/index.png" width="365" height="619"/>
+### 购物车页面
+<img src="https://github.com/nutter123/android/edit/master/image/add.png" width="365" height="619"/>
+<img src="https://github.com/nutter123/android/edit/master/image/add_s.png" width="365" height="619"/>
+### 搜索页面
+<img src="https://github.com/nutter123/android/edit/master/image/search.png" width="365" height="619"/>
 
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/login1.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/login.gif" width="365" height="619"/>
 
 
-### 个人中心
-
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/profile.png" width="365" height="619"/> <img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/profile.gif" width="365" height="619"/>
